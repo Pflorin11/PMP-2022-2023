@@ -5,7 +5,10 @@ import numpy as np
 
 #data = files.upload()
 data = read_csv("data.csv")
-x = np.array(data["momage"].tolist())
+
+#x = np.array(data["momage"].tolist())
+x = np.array(data["educ_cat"].tolist())
+
 y = np.array(data["ppvt"].tolist())
 
 with pm.Model() as model_g:
